@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="cabecera__menu">
+        <h1 class="logo"><img src="assets/icono.png" alt="Ícono" class="icono__logo">CAC-Movies</h1>
+        <nav class="contenedor__menu__nav">
+            <ul class="contenedor__menu__ul">
+                <a href="HTML/api.html"><li class="li__menu">API</li></a>
+                <a href="#tendencias"><li class="li__menu">Tendencias</li></a>
+                <a href="HTML/registro.html"><li class="li__menu">Registrarse</li></a>
+                <a href="HTML/iniciarSesion.html"><li class="li__menu">Iniciar Sesión</li></a> 
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="principal" data-aos="zoom-in"  data-aos-duration="1000">
+            <div class="lema">
+                <span>Películas y series ilimitadas</span>
+                <span>en un solo lugar</span>
+            </div>
+            <div class="llamado__accion">
+                <span>Disfruta donde quieras.</span>
+                <span>cancela en cualquier momento.</span>
+            </div>
+            <button class="btn__registro" onclick="location.href='HTML/registro.html'">Regístrate</button>
+        </section>
+        <section class="formulario__busqueda" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
+            <span class="llamado_accion_busqueda">¿Qué estás buscando para ver?</span>
+            <form class="busqueda">
+                <input type="text" class="input__buscar" placeholder="Buscar...">
+                <input type="button" class="btn__buscar" value="Buscar" onclick="location.href='#tendencias'">
+            </form>
+        </section class="linea__contenedor">
+           
+        <div class="linea"></div>
+        
+        <section id="tendencias" class="Tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000">
+            <span><h2>Las tendencias de hoy</h2></span>
+
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_1.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">THE BEEKEEPER</span>
+            </div>
+
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_2.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">BADLAND HUNTERS</span>
+            </div>
+
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_3.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">THE MARVELS</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_4.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">WONKA</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_5.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">AQUAMAN</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_6.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">MIGRATION</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_7.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">60 MINUTES</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_8.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">WISH</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_9.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">THE MASKED SAINT</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_10.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">DUE JUSTICE</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_11.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">ORION AN THE DARK</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_12.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">SAMURAI</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_13.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">LIFT</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_14.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">ATTACK</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_15.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">WARGIRL</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_16.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">POOR THINGS</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_17.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">THE FIVE</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_18.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">TRUNK</span>
+            </div>
+            
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/peli_19.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">ANYONE BUT YOU</span>
+            </div>
+
+            <div class="contenedor__imagen__pelicula">
+                <img class="imagen__pelicula" src="assets/mario.jpg" alt="imagen de presentación de Película" onclick="location.href='HTML/peliculas.html'" loading="lazy">
+                <span class="titulo__pelicula">MARIO BROS</span>
+            </div>
+
+            <div class="botones">
+                <button>Anterior</button>
+                <button>Siguiente</button>
+            </div>
+
+        </section>
+
+        <div class="linea"></div>
+            
+        <section class="aclamadas"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000">
+            <h2>Las más aclamadas</h2>
+            <span>
+                            
+                <img src="assets/aclamada_1.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_2.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_3.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_4.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_5.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_6.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_7.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_8.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_9.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_10.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_11.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/aclamada_12.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_13.jpg" alt="imagen de presentación de Película" loading="lazy"
+                <img src="assets/peli_14.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_15.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_16.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_17.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_18.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/peli_19.jpg" alt="imagen de presentación de Película" loading="lazy">
+                <img src="assets/mario.jpg" alt="imagen de presentación de Película" loading="lazy">
+            </span>
+        </section>
+        
+    </main>
+    <div class="flecha">
+        <a href="#main"><img src="assets/flecha-hacia-arriba.png" alt="flecha hacia arriba"></a>
+    </div>
+    <footer>
+        <span onclick="location.href='#tendencias'">Términos y condiciones</span>
+        <span onclick="location.href='#tendencias'">Preguntas frecuentes</span>
+        <span onclick="location.href='#tendencias'">Ayuda</span>
+        <span onclick="location.href='HTML/adminPeliculas.html'">Administrador de películas</span>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

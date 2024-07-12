@@ -1,0 +1,60 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/banner-bg.jpg);
+    min-height: 60vh;
+    background-blend-mode: soft-light;
+    background-color: RGB(24, 20, 25, 0.85);
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 2rem;
+   
+
+    .lema{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .llamado__accion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .btn__registro{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--color__fondo__header);
+        color: var(--color__fuente);
+        border-style: none;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: transform 0.5s, box-shadow 0.5s;
+        &:hover{
+            box-shadow: 0 0 10px rgba(255, 253, 253, 0.475);
+            transform: scale(0.9);
+        }
+    }
+
+}
+
+/* pantallas desktop */
+@media(min-width:1024px){
+    .principal{
+        min-height: 100vh;
+    }
+}
+
+
+
+

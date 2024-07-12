@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminPeliculas.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Administrador de Películas</title>
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="adminPeliculas">
+    <header class="cabecera__menu">
+        <h1 class="logo"><img src="/assets/icono.png" alt="Ícono" class="icono__logo">CAC-Movies</h1>
+        <nav class="contenedor__menu__nav">
+            <ul class="contenedor__menu__ul">
+                <a href="/HTML/api.html"><li class="li__menu">API</li></a>
+                <a href="/index.html#tendencias"><li class="li__menu">Tendencias</li></a>
+                <a href="/HTML/registro.html"><li class="li__menu">Registrarse</li></a>
+                <a href="/HTML/iniciarSesion.html"><li class="li__menu">Iniciar Sesión</li></a> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__admin__peliculas">
+        
+        <section class="titulo__admin__peliculas">
+
+            <h1>Gestión de Películas</h1>
+            <p>En esta sección se podrá llevar a cabo la gestión de las películas del portal.</p>
+
+        </section>
+           
+        <section class="section__form__admin__peliculas">
+
+            <form action="" method="post" class="formulario__admin__peliculas" id="formulario__admin__peliculas">
+
+                <div class="titulo">
+                    <label for="titulo" name="titulo" id="titulo" class="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo">
+                    <span id="errorTitulo" class="error"></span>
+                </div>
+                
+                <div class="genero">
+                    <label for="genero" name="genero" id="genero" class="genero">Género</label>
+                    <input type="text" id="genero" name="genero">
+                    <span id="errorGenero" class="error"></span>
+                </div>    
+
+                <div class="duracion">
+                    <label for="duracion" name="duracion" id="duracion" class="duracion">Duración</label>
+                    <input type="text" id="duracion" name="duracion">
+                    <span id="duracion" class="error"></span>
+                </div>    
+
+                <div class="imagen">
+                    <label for="imagen" name="imagen" id="imagen" class="imagen">Imagen</label>
+                    <input type="file" class="imagen__input" id="imagen" name="imagen">
+                    <span id="errorImagen" class="error"></span>
+                </div>
+                
+                <input type="submit" formaction="" value="Agregar Película" class="boton__agregar">
+
+            </form>
+
+        </section>
+
+        <section class="mostrar__peliculas">
+            <div class="titulo__mostrar__peliculas">
+                <h2>Listado de películas</h2>
+                <p>Para ver todos los datos de la películas, elija una y toque modificar.</p>
+            </div>
+
+            <table class="tabla__mostrar__peliculas" id="tabla__peliculas">
+
+                <thead>
+                    <th>Título</th>
+                    <th>Duración</th>
+                    <th>Género</th>
+                    <th>Imagen</th>
+                </thead>
+                <tbody id="cuerpo__tabla__peliculas">
+
+                </tbody>
+              <!--  <div class="tabla__mostrar__peliculas">
+                        <div class="mostrar__titulo">
+                            <h4>Título</h4>
+
+                        </div>
+                           
+
+                        <div>
+                            <h4>Duración</h4>
+                            
+                        </div>
+                            
+                        <div>
+                            <h4>Género</h4>
+
+                        </div>
+
+                        <div>
+                            <h4>Imagen</h4>
+
+                        </div>
+                </div> -->
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer class="adminPeliculas">
+        <span onclick="location.href='/index.html#tendencias'">Términos y condiciones</span>
+        <span onclick="location.href='/index.html#tendencias'">Preguntas frecuentes</span>
+        <span onclick="location.href='/index.html#tendencias'">Ayuda</span>
+        <span onclick="location.href='/index.html#tendencias'">Inicio</span>
+    </footer>
+    <script src="../JS/adminPeliculas.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

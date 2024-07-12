@@ -1,0 +1,10 @@
+.linea{
+    display: flex;
+    position: static;
+    display: block;
+    margin: 0% auto;
+    width: 75vw;
+    height: 0.3vh;
+    margin-top: 1rem;
+    background-color: var(--color__fondo__header);
+}

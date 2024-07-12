@@ -1,0 +1,223 @@
+@import url(../main.css);
+
+
+
+.main__admin__peliculas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 9rem;
+    align-items: center;
+    justify-content: center;
+    .titulo__admin__peliculas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        p{
+            text-align: center;
+            padding: 0rem 2rem;
+        }
+    }
+
+    .formulario__admin__peliculas{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .titulo,
+        .genero,
+        .duracion,
+        .imagen{
+            display: flex;
+            flex-direction: column;
+            gap:0.5rem;
+            align-items: center;
+        }
+
+        .imagen__input{
+            border-color: #FFF;
+            padding: 0.5rem;
+            width: 26rem;
+            border-radius: 0.5rem;
+            background-color: #FFF;
+        }
+
+        input[type=text]{
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+        }
+
+        input[type=file]{
+        
+            padding: 0.3rem 0.1rem;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            color: rgb(28, 28, 27);
+        }
+
+
+        .boton__agregar{
+           margin-top: 0.5rem;
+           padding: 0%;
+           height: 2rem;
+           background-color: rgb(24, 78, 24);
+           color: #FFF;
+           border-radius: 5rem;
+           border-color: #03260c;
+        }
+    }
+
+    .mostrar__peliculas{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+       
+        .titulo__mostrar__peliculas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+    }
+    
+    table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 5rem;
+        
+    }
+
+    thead{
+        background-color: rgb(85, 83, 83);
+        padding: 1rem 0rem;
+        margin: 0px;
+        width: 100vw;
+        
+    }
+
+    th{
+        width: 20%;
+    }
+  
+   
+    tr{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-self: right;
+        gap: 0.5rem;
+        padding: 0.3rem;
+        font-size: 1.5rem;
+        width: 100vw;
+        
+    }
+
+   td{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+   }
+
+   tbody > :nth-child(even) {
+    background-color: rgb(130, 122, 122); /* Color de fondo para hijos pares */
+  }
+    
+}
+
+@media (min-width:768px) and (max-width:1025px){
+    
+    .main__admin__peliculas{
+        
+        .formulario__admin__peliculas{
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 60vw;
+            gap: 4rem;
+            align-items: center;
+            justify-content: center;
+            
+    
+            .titulo,
+            .genero,
+            .duracion,
+            .imagen{
+                gap:0.5rem;
+                align-items: self-start;
+                width: 25vw;
+                font-size: 1.2rem;
+            }
+
+            input[type=text]{
+                width: 100%;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                
+            }
+
+         
+    
+            .boton__agregar{
+               padding: 0.5rem 1rem 2.5rem 1rem;
+               text-align: center;
+               font-size: 1.5rem;
+                              
+            }
+        }
+    }
+   
+
+ 
+}
+
+@media (min-width:1281px){
+    .main__admin__peliculas{
+        
+        .formulario__admin__peliculas{
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 60vw;
+            gap: 5rem;
+            align-items: center;
+            justify-content: center;
+            
+    
+            .titulo,
+            .genero,
+            .duracion,
+            .imagen{
+                gap:0.5rem;
+                align-items: self-start;
+                width: 25vw;
+                font-size: 1.2rem;
+            }
+
+            input[type=text]{
+                width: 100%;
+                padding: 0.7rem 1rem;
+                border-radius: 0.5rem;
+                
+            }
+
+         
+    
+            .boton__agregar{
+               padding: 0.5rem 1rem 2.5rem 1rem;
+               text-align: center;
+               font-size: 1.5rem;
+                              
+            }
+        }
+    }
+   
+
+   
+}

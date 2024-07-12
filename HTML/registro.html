@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC -MOVIES</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg" type="image/x-icon">
+    
+</head>
+<body>
+    <header class="cabecera__registro">
+        <h1 class="logo"  onclick="location.href='/index.html'"><img src="/assets/icono.png" alt="Ícono" class="icono__logo">CAC-Movies</h1>
+    </header>
+    <main class="container">
+        <div class="registration-form">
+            <h2>Registro</h2>
+            <form action="" method="" id="formuluario__registro">
+                
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <span id="errorNombre" class="error"></span>
+                
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                <span id="errorApellido" class="error"></span>
+                
+                <input type="email" id="email" placeholder="Email">
+                <span id="errorEmail" class="error"></span>
+
+                <input type="password" id="password" name="clave" placeholder="Contraseña">
+                <span id="errorClave" class="error"></span>
+
+                <input type="password" id="password" name="confirmaClave" placeholder="Confirma tu Contraseña">
+                <span id="errorConfirmaClave" class="error"></span>
+                
+                <div class="input-container">
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de Nacimiento">
+                    <span id="errorFechaNacimiento" class="error"></span>
+
+                    <select name="pais" id="pais">
+                        <option class="opcion__pais" id="opcion__pais" value="">País</option>
+                        <option class="opcion__pais" id="opcion__pais" value="AR">Argentina</option>
+                        <option class="opcion__pais" id="opcion__pais" value="BO">Bolivia</option>
+                        <option class="opcion__pais" id="opcion__pais" value="BR">Brasil</option>
+                        <option class="opcion__pais" id="opcion__pais" value="CH">Chile</option>
+                        <option class="opcion__pais" id="opcion__pais" value="CO">Colombia</option>
+                        <option class="opcion__pais" id="opcion__pais" value="EC">Ecuador</option>
+                        <option class="opcion__pais" id="opcion__pais" value="PY">Paraguay</option>
+                        <option class="opcion__pais" id="opcion__pais" value="PE">Perú</option>
+                        <option class="opcion__pais" id="opcion__pais" value="UY">Uruguay</option>
+                        <option class="opcion__pais" id="opcion__pais" value="VE">Venezuela</option>
+                    </select>
+                    <span id="errorPais" class="error"></span>
+
+                </div>
+                <div class="terminos__y__condiciones" id="terminos__y__condiciones">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label id="terminos"  name="terminos"  for="terminos">Acepto términos y condiciones</label>
+                    <span id="errorTerminos" class="error"></span>
+                </div>
+                                
+                <input type="submit" formaction="" value="Registrarse">
+            </form>
+            <a class="ayuda" href="#">¿Necesitas ayuda?</a>
+            
+    </main>
+    <script src="/JS/validarFormularios.js"></script>
+</body>
+</html>

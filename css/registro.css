@@ -1,0 +1,233 @@
+body{
+    background: linear-gradient(to right top, #24242473,#24242473), url(/assets/bg-register.jpg);
+    background-position: center;
+    
+}
+
+header{
+    position: static;
+    width: 100vw;
+    background: none;
+    margin-top: 2rem;
+    align-items: flex-start;
+    .logo:hover{
+        animation:none;
+    }
+}
+
+main{
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: RGB(42, 42, 42);
+            border-radius: 1rem;
+            width: 80VW;
+           
+            
+            h2{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            form{
+                
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    
+
+                    #nombre,
+                    #apellido,
+                    #email,
+                    #password,
+                    #fecha_nacimiento{
+                        width: 70%;
+                        height: 1rem;
+                        border-radius: 1rem;
+                        padding: 0.5rem;
+                        border-color: RGB(159, 54, 71);
+                        background: none;
+                        border-style: solid;
+                        font-size: 1.1rem;
+                        color: RGB(228, 243, 253);
+                        
+                    }
+
+                    input[type="date"]{
+                        padding-inline-start: 0px;
+                        
+                        color: RGB(228, 243, 253);
+
+                    }
+
+                    select{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 75%;
+                        height: 2.2rem;
+                        border-radius: 1rem;
+                        padding-left: 0.5rem;
+                        border-width: 2px;
+                        border-color: RGB(159, 54, 71);
+                        background: none;
+                        border-style: solid;
+                        font-size: 1.1rem;
+                        color: RGB(228, 243, 253);
+                        margin-top: 1rem;
+                        option{
+                            background-color: RGB(42, 42, 42);
+                            
+                        }
+                        
+                    }
+
+                    .terminos__y__condiciones{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 1rem;
+                        gap: 0.5rem;
+                        margin-bottom: 1rem;
+
+                    }
+
+                    input[type="submit"]{
+                        width: 70%;
+                        height: 2.5rem;
+                        border-radius: 0.5rem;
+                        border-style: none;
+                        background-color: RGB(159, 54, 71);
+                        color: RGB(228, 243, 253);
+                        margin-bottom: 1rem;
+                    }
+                    
+                }
+
+            .ayuda{
+                margin-bottom: 1rem;
+                color: RGB(113, 113, 113);
+            }
+            
+        }
+    }
+
+    /* medidas para tablet */
+    @media(min-width:702px ) and (max-width:1024px){
+        header{
+            
+          h1{
+            min-width: 15vw;
+          }  
+        }
+
+        main{
+            .registration-form{
+                min-width: 60%;
+                h2{
+                    position: static;
+                }
+            }
+        }
+    }
+   
+/* medidas para desktop */
+
+@media (min-width:1025px) and (max-width:1280px){
+    main{
+        margin-bottom: 3rem;
+        
+                    
+        div h2{
+            position: absolute;
+            left: 38%;
+            top: 24%;
+            font-size: 3rem;
+            text-shadow: 2px -3px 5px #2a2a2a;
+        }    
+    }
+
+    div{
+        padding-top: 5rem;
+        padding-bottom: 1.1rem;
+        max-width: 30vw;
+        form input[type="date"]{
+            margin-top: -20%;
+        }
+
+     
+        button{
+            margin-top: -2rem;
+            max-width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+
+    #terminos__y__condiciones{
+        padding-top: 0%;
+        
+    }
+
+   
+    
+}
+
+@media (min-width:1281px){
+    main{
+        margin-bottom: 3rem;
+       
+                    
+        div h2{
+            position: absolute;
+            left: 38%;
+            top: 19%;
+            font-size: 3rem;
+            text-shadow: 2px -3px 5px #2a2a2a;
+        }    
+    }
+
+    div{
+        padding-top: 5rem;
+        padding-bottom: 1.1rem;
+        max-width: 30vw;
+        form input[type="date"]{
+            margin-top: -17%;
+        }
+
+     
+        button{
+            margin-top: -2rem;
+            max-width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+
+    #terminos__y__condiciones{
+        padding-top: 0%;
+        
+    }
+
+   
+    
+}
+
+
+
+
+

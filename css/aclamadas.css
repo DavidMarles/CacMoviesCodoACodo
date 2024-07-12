@@ -1,0 +1,39 @@
+.aclamadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100vw;
+    
+    
+    span{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+        gap: 2rem;
+        padding:5%;
+        width: 80%;
+        margin: 3% 10%;
+       
+    }
+    
+    span::-webkit-scrollbar{
+        background-color: RGB(23, 23, 23);
+        border-radius: 1rem;
+    
+    }
+    span::-webkit-scrollbar-thumb {
+        background-color: var(--color__fondo__header);
+        border-radius: 1rem;
+    }
+   
+
+   
+    img{
+        width: 10rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,70 @@
+@import url(/css/menu.css);
+@import url(/css/seccionPrincipal.css);
+@import url(/css/formBuscar.css);
+@import url(/css/lineaInferior.css);
+@import url(/css/tendencias.css);
+@import url(/css/aclamadas.css);
+@import url(/css/footer.css);
+@import url(/css/flecha.css);
+
+:root{
+    --color__fuente:RGB(253, 250, 251);
+    --color__fondo__header: RGB(159, 54, 71);
+    --color__fondo__pagina:RGB(24, 20, 25);
+}
+
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color__fondo__pagina);
+    color: var(--color__fuente);
+    overflow-x: hidden;
+    font-family: "Open Sans";
+    margin: 0%;
+    padding: 0%;
+}
+body::-webkit-scrollbar{
+    background-color: RGB(23, 23, 23);
+    border-radius: 1rem;
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color__fondo__header);
+    border-radius: 1rem;
+}
+
+main{
+    width: 100vw;
+    
+}
+
+ul{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-inline-end: 0%;
+    padding-inline-start: 0%;
+}
+
+h1, h2, h4{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+
+a{
+    text-decoration: none;
+    color:  var(--color__fuente);;
+}
+
+/* animaciones */
+
+@keyframes movimineto__logo{
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+

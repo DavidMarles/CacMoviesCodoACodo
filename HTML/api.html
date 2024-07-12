@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/appi.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecera__menu">
+        <h1 class="logo"  onclick="location.href='/index.html'"><img src="../assets/icono.png" alt="Ícono" class="icono__logo">CAC-Movies</h1>
+        <nav class="contenedor__menu__nav">
+            <ul class="contenedor__menu__ul">
+                <a href="#"><li class="li__menu">API</li></a>
+                <a href="/index.html#tendencias"><li class="li__menu">Tendencias</li></a>
+                <a href="/HTML/registro.html"><li class="li__menu">Registrarse</li></a>
+                <a href="/HTML/iniciarSesion.html"><li class="li__menu">Iniciar Sesión</li></a> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Imágenes desde API</h1>
+        <div class="container__imagenes__api" id="container__imagenes__api"></div>
+    </main>
+    <script src="/JS/appi.js"></script>
+</body>
+</html>

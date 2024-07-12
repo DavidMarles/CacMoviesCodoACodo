@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/peliculas.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Películas</title>
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="peliculas">
+    <header class="cabecera__menu">
+        <h1 class="logo"><img src="/assets/icono.png" alt="Ícono" class="icono__logo">CAC-Movies</h1>
+        <nav class="contenedor__menu__nav">
+            <ul class="contenedor__menu__ul">
+                <a href="/HTML/api.html"><li class="li__menu">API</li></a>
+                <a href="/index.html#tendencias"><li class="li__menu">Tendencias</li></a>
+                <a href="/HTML/registro.html"><li class="li__menu">Registrarse</li></a>
+                <a href="/HTML/iniciarSesion.html"><li class="li__menu">Iniciar Sesión</li></a> 
+            </ul>
+        </nav>
+    </header>
+    <main class="principal" id="main">
+
+        <section class="info__pelicula">
+            <img src="/assets/mario.jpg" alt="banner de mario bross" class="imagen__mario">
+            <div class="texto__informacion">
+                <h1>The Super Mario Bros. movie (2023)<h1>
+                
+                <p class="genero__pelicula">04/05/2023 • Animation, Family, Adventure, Fantasy, Comedy • 1h 33m</p>
+                
+                <h2>Overview</h2>
+                <p class="descripcion__pelicula">While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.</p>
+            </div>
+            <div class="creditos">
+                <div class="creditos1">
+                    <span class="autor">Aaron Horvath</span>
+                    <span>Director</span>
+                </div>
+                <div class="creditos2">
+                    <span class="autor">Michael Jelenic</span>
+                    <span>Director</span>
+                </div> <div class="creditos3">
+                    <span class="autor">Matthew Fogel</span>
+                    <span>Writer</span>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="trailer-info" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000">
+            <div class="trailer">
+                <h2>Ver trailer</h2>
+                <iframe src="https://www.youtube.com/embed/RjNcTBXTk4I?si=z52_QK1A3Ar6WHHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video__trailer"></iframe>
+
+            </div>
+
+            
+                <div class="social">
+                                       
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                
+                
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                
+            
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                
+                
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                       
+                </div>
+                <div class="more-info">
+                    <table>
+                        <caption>Info</caption>
+                        <tbody>
+                            <tr>
+                                <td class="bold">Status</td>
+                                <td>Released</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Original Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Budget</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Revenue</td>
+                                <td>$$$$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+        </section>
+    </main>
+    <div class="flecha">
+        <a href="#main"><img src="/assets/flecha-hacia-arriba.png" alt="flecha hacia arriba"></a>
+    </div>
+    <footer class="peliculas">
+        <span onclick="location.href='/index.html#tendencias'">Términos y condiciones</span>
+        <span onclick="location.href='/index.html#tendencias'">Preguntas frecuentes</span>
+        <span onclick="location.href='/index.html#tendencias'">Ayuda</span>
+        <span onclick="location.href='/index.html#tendencias'">Administrador de películas</span>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
